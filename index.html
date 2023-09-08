@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Curriculo</title>
+    <link rel="stylesheet" href="/Atividade Aula 3/global.css">
+</head>
+<body>
+    <fieldset align="left">
+        <h2>1. Cadastro Pessoal</h2>
+    </fieldset>
+    <fieldset align="left">
+    <label for="name">Nome:</label>
+        <input type="text" name="name" id="name">
+    </fieldset>
+    <fieldset align="left">
+    <label align="center" for="endereço">Endereço:</label>
+        <input size="50" type="text" name="endereço" id="endereço">
+    <label for="cep">Cep:</label>
+        <input size="10" type="number" name="cep" id="cep">
+    </fieldset>
+    <fieldset align="left">
+    <label for="email">Email:</label>
+        <input size="40" type="text" name="email" id="email">
+    </fieldset>
+    <fieldset align="left">
+    <label for="Telefones">Telefones:</label>
+        <input size="40" type="number" name="telefone" id="telefone">
+    </fieldset>
+    <fieldset align="left">
+    <label for="cidade">Cidade:</label>
+        <input size="20" type="text" name="cidade" id="cidade">
+    <label for="estado">Estado: </label>
+    <select name="estado" id="estado">
+        <option value=""></option>
+        <option value="PB">Paraíba</option><option value="PE">Pernambuco</option>
+        <!-- Não coloquei todos mas caso fosse necessario saberia colocar-->
+         </select>  
+    </fieldset> 
+    <fieldset align="left">
+    <label for="Naturalidade">Naturalidade:</label>
+        <input size="3" type="text" name="Naturalidade" id="Naturalidade">
+    <label for="Estado">Estado: </label>
+        <select name="Estado" id="Estado">
+            <option value=""></option>
+            <option value="PB">Paraíba</option><option value="PE">Pernambuco</option>
+        <!-- Não coloquei todos mas caso fosse necessario saberia colocar-->
+        </select>  
+    </fieldset> 
+    <fieldset align="left">
+    <label for="estado-civil">Estado Civil: </label>
+        <select name="estado-civil" id="estado-civil">
+            <option value=""></option> <option value="">Casado</option> <option value="">Solteiro</option> <option value="">Viuvo</option>
+        </select>
+    <label for="idade">Idade</label>
+        <input size="1" type="text" name="idade" id="idade">
+    </fieldset>
+    <fieldset align="left">
+        <h2>2. Escolaridade</h2>
+    </fieldset>
+    <fieldset align="left">
+    <!--Input antes do label para a bolinha de marcar vir antes do sexo escolhido-->
+    <input type="radio" name="sexo" value="masculino" id="masculino" checked>
+        <label for="masculino">masculino</label>
+    <input type="radio" name="sexo" value="feminino" id="feminino">
+        <label for="feminino">feminino</label>
+  </fieldset>
+  <fieldset align="left">
+    <label for="escola">Entidade de ensino:</label>
+        <input type="text" name="escola" id="escola">
+  </fieldset>
+  <fieldset align="left">
+    <label for="formacao">Formação:</label>
+        <input type="text" name="formacao" id="formacao">
+  </fieldset>
+  <fieldset align="left">
+    <label for="conclusão" ">Ano de conclusão:</label>
+        <input type="text" name="conclusão" id="conclusão">
+  </fieldset>
+  <fieldset align="left">
+    <h2>3. Experiência Profissional</h2>
+  </fieldset>
+  <fieldset align="left">
+    <label for="empresa" ">Empresa:</label>
+        <input type="text" name="empresa" id="empresa">
+  </fieldset>
+  <fieldset align="left">
+    <label for="inicio" ">inicio (mês/ano):</label>
+        <input type="text" name="inicio" id="inicio">
+    <label for="termino" ">termino (mês/ano):</label>
+        <input type="text" name="termino" id="termino">
+    </fieldset>
+    <fieldset align="left">
+        <label for="cargo">Cargo</label>
+            <input type="text" name="cargo" id="cargo">
+        <label for="atuacao">Area de atuação:</label>
+            <input type="text" name="atuacao" id="atuacao">
+    </fieldset>
+    <fieldset align="left">
+        <label for="mensagem">Mensagem:</label><br />
+        <textarea name="mensagem" id="mensagem" rows="10" cols="243">Descrição experiencia</textarea>
+    </fieldset>
+    <fieldset align="left">
+        <h2>4. Certificação</h2>
+    </fieldset>
+    <fieldset align="left">
+        <label for="Titulo">Titulo</label>
+            <input type="text" name="titulo" id="titulo">
+    </fieldset>
+    <fieldset align="left">
+        <label for="instituicao">Instituiçao</label>
+            <input type="text" name="instituicao" id="instituicao">
+    </fieldset>
+    <fieldset align="left">
+        <label for="conhecimento">Area de Conhecimento</label>
+            <input type="text" name="conhecimento" id="conhecimento">
+    </fieldset>
+    <fieldset align="left">
+        <label for="inicio" ">inicio (mês/ano):</label>
+            <input type="text" name="inicio" id="inicio">
+        <label for="termino" ">termino (mês/ano):</label>
+            <input type="text" name="termino" id="termino">
+    </fieldset>
+    <fieldset align="left">
+        <label for="carga">Carga Horaria</label>
+            <input type="text" name="carga" id="carga">
+        <label for="UF">Cidade/UF</label>
+            <input type="text" name="UF" id="UF">     
+    </fieldset>
+    <fieldset align="left">
+        <h2>5. Publicação</h2>
+    </fieldset>
+    <fieldset align="left">
+        <input type="radio" name="artigo" value="artigo" id="artigo" checked>
+            <label for="artigo">Artigo</label>
+        <input type="radio" name="Boletim" value="boletim" id="boletim">
+            <label for="boletim">Boletim</label>
+        <input type="radio" name="folheto" value="folheto" id="folheto">
+            <label for="folheto">Folheto</label>
+        <input type="radio" name="livro" value="livro" id="livro">
+            <label for="livro">Livro</label>
+        <input type="radio" name="revista" value="revista" id="revista">
+            <label for="revista">Revista</label>
+        <input type="radio" name="outros" value="outros" id="outros">
+            <label for="outros">Outros</label>
+      </fieldset>
+      <fieldset align="left">
+        <label for="conhecimento">Area de conhecimento</label>
+            <input type="text" name="conhecimento" id="conhecimento">
+      </fieldset>
+      <fieldset align="left">
+        <label for="titulo">Titulo</label>
+            <input type="text" name="titulo" id="titulo">
+      </fieldset>
+      <fieldset align="left">
+        <label for="fonte">Fonte:</label>
+            <input type="text" name="fonte" id="fonte">
+        <label for="data">Data de Publicação</label>
+            <input type="date" name="date" />
+      </fieldset>
+      <fieldset align="left">
+        <h2>6. Idioma ( Escreva seu nivel dentro da caixinha )</h2>
+      </fieldset> 
+      <fieldset align="left">
+        <label for="ingles">Inglês</label>
+            <input type="text" name="ingles" id="ingles">
+        <label for="frances">Francês</label>
+            <input type="text" name="frances" id="frances">
+        <label for="espanhol">Espanhol</label>
+            <input type="text" name="espanhol" id="espanhol">
+        <label for="outro">Outro</label>
+            <input type="text" name="outro" id="outro">
+    </fieldset>
+    <fieldset align="left">
+        <h2>7. Interesse Profissional</h2>
+    <fieldset align="left">
+        <label for="interesse-prof">Interesse Profissional:</label><br />
+        <textarea name="interesse-prof" id="interesse-prof" rows="10" cols="243">Descrição experiencia</textarea>
+    </fieldset>
+ 
+</body>
+</html>
